@@ -13,7 +13,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : false;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WESHOP|Barang Elektronik</title>
-    <link rel="stylesheet" href="<?php echo BASE_URL . "css/style.css"; ?>">
+    <link href="<?php echo BASE_URL . "css/style.css"; ?>" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
@@ -35,7 +35,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : false;
 
         <div id="content">
             <?php
-            $filenames = "page.php";
+            $filenames = "$page.php";
 
             if (file_exists($filenames)) {
                 include_once($filenames);
