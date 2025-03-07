@@ -1,10 +1,16 @@
+<?php
+if ($user_id) {
+    direct(BASE_URL);
+}
+?>
+
 <div id="container-user-akses">
     <form action="<?php echo BASE_URL . "proses_login.php"; ?>" method="post">
 
         <?php
         $notif = isset($_GET['notif']) ? $_GET['notif'] : false;
 
-        if ($notif == "require") {
+        if ($notif == "true") {
             echo "<div class='notif'>Maaf, email dan password yang kamu masukan tidak cocok</div>";
         }
         ?>
