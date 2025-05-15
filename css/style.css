@@ -137,7 +137,8 @@ body {
   padding: 10px 20px;
 }
 
-#menu-profile ul li a:hover {
+#menu-profile ul li a:hover,
+#menu-profile ul li a.active {
   background: orange;
 }
 
