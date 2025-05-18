@@ -2,6 +2,7 @@
 session_start();
 
 include_once("function/helper.php");
+include_once("function/koneksi.php");
 
 $page = isset($_GET['page']) ? $_GET['page'] : false;
 
