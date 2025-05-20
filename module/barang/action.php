@@ -16,7 +16,7 @@ move_uploaded_file($_FILES["file"]["tmp_name"], "../../images/barang/" . $nama_f
 
 if ($button == "Add") {
     mysqli_query($koneksi, "INSERT INTO barang (nama_barang, kategori_id, spesifikasi, gambar, harga, stok, status)
-     VALUES('$nama_barang', '$kategori_id', '$spesifikasi', '$$nama_file', '$harga', '$stok', '$status')");
+     VALUES('$nama_barang', '$kategori_id', '$spesifikasi', '$nama_file', '$harga', '$stok', '$status')");
 }
 // else if ($button == "Update") {
 //     $kategori_id = $_GET['kategori_id'];
