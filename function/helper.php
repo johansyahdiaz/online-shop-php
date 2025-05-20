@@ -6,3 +6,9 @@ function direct($url)
     echo "<script> window.location = '$url'; </script>";
     exit;
 }
+
+function rupiah($nilai = 0)
+{
+    $string = "Rp," . number_format($nilai);
+    return $string;
+}
