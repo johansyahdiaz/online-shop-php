@@ -57,7 +57,7 @@ $level = isset($_SESSION['level']) ? $_SESSION['level'] : false;
             if (file_exists($filenames)) {
                 include_once($filenames);
             } else {
-                echo "Maaf file tersebut tidak ada di dalam Sistem";
+                include_once("main.php");
             }
 
             ?>
