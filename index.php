@@ -22,6 +22,8 @@ $level = isset($_SESSION['level']) ? $_SESSION['level'] : false;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WESHOP|Barang Elektronik</title>
+    <script src="<?php echo BASE_URL . "js/jquery-3.7.1.min.js"; ?>"></script>
+    <script src="<?php echo BASE_URL . "js/Slides-SlidesJS-3/Sorce/jquery.slides.min.js"; ?>"></script>
 
 </head>
 
